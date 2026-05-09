@@ -376,7 +376,78 @@ int main(){
 
 ***
 
+## Count Binary strings
 
+Count Binary\
+Write a C/C++ program to recursively count the number of binary strings of length N containing exactly K ones\
+such that no two ones are adjacent to one another.\
+Example: If N = 4 and K = 2, then the desired number of binary strings will be 3. These strings are:\
+1010\
+0101\
+1001\
+Input Format:\
+● The first line contains two positive integers N and K, separated by a space\
+Output Format:\
+● A single integer representing the number of binary strings of length n containing exactly k ones with no\
+two ones adjacent to one another.\
+Assumptions on Input :\
+● Assume that the value of N entered by the user will be between 1 and 10, both inclusive\
+● Assume that the value of K entered by the user will be between 1 and 10, both inclusive\
+● If it is not possible to construct a binary string of this sort, print 0.\
+Practice Testcases :\
+Input : Output&#x20;\
+4 2 : 3\
+5 3 : 1\
+6 5 : 0
+
+
+
+```
+// Actually straight forward (N-K+1) C k, But the question asked to implement recursively.
+```
+
+```
+#include <iostream>
+using namespace std;
+
+// Actually straight forward (N-K+1) C k, But the question asked to implement recursively.
+
+int solve(int n, int k, bool prevOne)
+{
+    // Exact number of ones used
+    if (n == 0)
+    {
+        return (k == 0);
+    }
+
+    // Impossible cases
+    if (k < 0)
+        return 0;
+
+    int count = 0;
+
+    // Place 0
+    count += solve(n - 1, k, false);
+
+    // Place 1
+    if (!prevOne)
+    {
+        count += solve(n - 1, k - 1, true);
+    }
+
+    return count;
+}
+
+int main()
+{
+    int N, K;
+    cin >> N >> K;
+
+    cout << solve(N, K, false);
+
+    return 0;
+}
+```
 
 
 
