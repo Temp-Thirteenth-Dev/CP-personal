@@ -1,6 +1,7 @@
 # Table of contents
 
 * [CP-personal](README.md)
+* [C++ Rev](c++-rev.md)
 * [CPP Unf](cpp-unf.md)
 * [Intro to Linux The LF and FCC](intro-to-linux-the-lf-and-fcc.md)
 
