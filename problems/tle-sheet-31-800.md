@@ -449,11 +449,63 @@ int main()
 }
 ```
 
+***
 
+## Bruteforce search for a string in a string
 
+```cpp
+#include <iostream>
+using namespace std;
+#include<string>
 
+int main() 
+{
+    // cout << "Hello, World!";
+    string first;
+    string second;
+    
+    cin >> first;
+    cin >> second;
+    bool found = true;
+    for(int i=0; i <= first.size() - second.size() ; i++){
+      found = true;
+      for(int j=0; j<second.size(); j++){
+        if(first[i+j]!=second[j]){
+          found = false;
+          break;
+        }
+      }
+      if(found){
+        cout << i << " ";
+      }
+    }
+    
+    return 0;
+}
+```
 
+#### Using find()
 
+<pre class="language-cpp"><code class="lang-cpp">#include &#x3C;iostream>
+#include &#x3C;string>
+using namespace std;
+
+int main()
+{
+    string first, second;
+    cin >> first >> second;
+
+<strong>    size_t pos = first.find(second);
+</strong>
+    while (pos != string::npos)
+    {
+        cout &#x3C;&#x3C; pos &#x3C;&#x3C; " ";
+        pos = first.find(second, pos + 1);
+    }
+
+    return 0;
+}
+</code></pre>
 
 
 
