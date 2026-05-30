@@ -4,6 +4,7 @@
 * [C++ Rev](c++-rev.md)
 * [CPP Unf](cpp-unf.md)
 * [Intro to Linux The LF and FCC](intro-to-linux-the-lf-and-fcc.md)
+* [Math for CS - MIT CS](math-for-cs-mit-cs.md)
 
 ## Problems
 
