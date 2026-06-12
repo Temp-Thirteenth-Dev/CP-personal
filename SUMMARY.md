@@ -9,3 +9,4 @@
 ## Problems
 
 * [TLE Sheet 31 - 800](problems/tle-sheet-31-800.md)
+* [Math for ML NPTEL by IISc](problems/math-for-ml-nptel-by-iisc.md)
