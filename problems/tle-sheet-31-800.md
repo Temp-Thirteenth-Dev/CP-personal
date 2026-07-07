@@ -451,7 +451,7 @@ int main()
 
 ***
 
-## Bruteforce search for a string in a string
+### Bruteforce search for a string in a string
 
 ```cpp
 #include <iostream>
@@ -506,6 +506,137 @@ int main()
     return 0;
 }
 </code></pre>
+
+***
+
+## 1837A : Grasshopper on a Line
+
+Tried brute-force: `O(n)`
+
+```cpp
+// Grasshoper on a Line problem : CF : https://codeforces.com/problemset/problem/1837/A
+
+#include<iostream>
+using namespace std;
+#include<vector>
+
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int n, k;
+        cin >> n >> k;
+        vector<int> result;
+        int temp = n;
+        while (n > 0) {
+            while ((temp % k) != 0 && (n - temp) >= 0) {
+                n -= temp;
+                result.push_back(temp);
+            }
+            temp--;
+        }
+        cout << result.size() << endl;
+        for (auto i : result) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
+
+```
+
+Optimal solution : `O(1)`
+
+### [1837A - Grasshopper on a Line](https://codeforces.com/contest/1837/problem/A) : [Editorial](https://codeforces.com/blog/entry/116752)
+
+When $$x$$ is not divisible by $$k$$, the grasshopper can reach $$x$$ in just one jump.
+
+Otherwise, you can show that two jumps are always enough. For example, jumps $$1$$ and $$x−1$$. $$1$$ is not divisible by any $$k>1$$. Also, $$x$$ and $$x−1$$ can't be divisible by any $$k>1$$ at the same time.
+
+```python
+for _ in range(int(input())):
+	x, k = map(int, input().split())
+	if x % k != 0:
+		print(1)
+		print(x)
+	else:
+		print(2)
+		print(1, x - 1)
+```
+
+***
+
+## [1814A - Coins](https://codeforces.com/problemset/problem/1814/A)
+
+```cpp
+#include<iostream>
+using namespace std;
+#include <bits/stdc++.h>
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    int T;
+    cin >> T;
+    while (T--) {
+        int n, k;
+        cin >> n >> k;
+        if ((n % 2 != 0) && k % 2 == 0) {
+            cout << "NO" << endl;
+        }
+        else {
+            cout << "YES" << endl;
+        }
+    }
+}
+```
+
+{% hint style="warning" %}
+Check constraints and use `long long int` when needed!
+
+```
+#include<iostream>
+using namespace std;
+#include <bits/stdc++.h>
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    long long int T;
+    cin >> T;
+    while (T--) {
+        long long int n, k;
+        cin >> n >> k;
+        if ((n % 2 != 0) && k % 2 == 0) {
+            cout << "NO" << endl;
+        }
+        else {
+            cout << "YES" << endl;
+        }
+    }
+}
+```
+{% endhint %}
+
+Wrong on testcases with large n,k
+
+```
+10000
+819108119830465894 94987237155950676
+366512247337180625 324480137879978947
+764860269266859657 355861723395114027
+147839745999791751 141696686761423710
+888187969014078066 680827103128989881
+...
+```
+
+***
+
+
 
 
 
