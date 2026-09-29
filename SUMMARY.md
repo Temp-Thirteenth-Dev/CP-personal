@@ -1,6 +1,16 @@
 # Table of contents
 
 * [CP-personal](README.md)
+
+## CS699 IITB SL
+
+* [L2\_Bash\_Quiz\_Lab\_Notes](cs699-iitb-sl/l2_bash_quiz_lab_notes.md)
+* [L3\_Git\_Study\_Notes](cs699-iitb-sl/l3_git_study_notes.md)
+* [L4\_python\_sed\_Study\_Notes](cs699-iitb-sl/l4_python_sed_study_notes.md)
+* [L5\_notes\_python\_ecosystem\_web\_scraping](cs699-iitb-sl/l5_notes_python_ecosystem_web_scraping.md)
+
+***
+
 * [C++ Rev](c++-rev.md)
 * [CPP Unf](cpp-unf.md)
 * [Intro to Linux The LF and FCC](intro-to-linux-the-lf-and-fcc.md)
