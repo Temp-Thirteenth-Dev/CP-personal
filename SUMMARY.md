@@ -8,6 +8,7 @@
 * [L3\_Git\_Study\_Notes](cs699-iitb-sl/l3_git_study_notes.md)
 * [L4\_python\_sed\_Study\_Notes](cs699-iitb-sl/l4_python_sed_study_notes.md)
 * [L5\_notes\_python\_ecosystem\_web\_scraping](cs699-iitb-sl/l5_notes_python_ecosystem_web_scraping.md)
+* [CS699\_Assignment\_Revision\_Notes](cs699-iitb-sl/cs699_assignment_revision_notes.md)
 
 ***
 
