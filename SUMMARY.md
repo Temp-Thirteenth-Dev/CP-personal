@@ -1,6 +1,6 @@
 # Table of contents
 
-* [CP-personal](README.md)
+* [Personal](README.md)
 
 ## CS699 IITB SL
 
@@ -14,6 +14,13 @@
 
 * [C++ Rev](c++-rev.md)
 * [CPP Unf](cpp-unf.md)
+
+## CS744
+
+* [Chapters OS-TEP](cs744/chapters-os-tep.md)
+
+***
+
 * [Intro to Linux The LF and FCC](intro-to-linux-the-lf-and-fcc.md)
 * [Math for CS - MIT CS](math-for-cs-mit-cs.md)
 * [Math for ML NPTEL by IISc](math-for-ml-nptel-by-iisc.md)
