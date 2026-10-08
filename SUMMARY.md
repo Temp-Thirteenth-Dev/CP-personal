@@ -18,6 +18,7 @@
 ## CS744
 
 * [Chapters OS-TEP](cs744/chapters-os-tep.md)
+* [Chapters xv6 book](cs744/chapters-xv6-book.md)
 
 ***
 
