@@ -2,6 +2,10 @@
 
 * [Personal](README.md)
 
+## CS740-mvc
+
+* [CS740\_Midsem\_Q14\_Q15\_Solutions](cs740-mvc/cs740_midsem_q14_q15_solutions.md)
+
 ## CS699 IITB SL
 
 * [L2\_Bash\_Quiz\_Lab\_Notes](cs699-iitb-sl/l2_bash_quiz_lab_notes.md)
